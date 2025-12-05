@@ -28,7 +28,7 @@ mcp = FastMCP("AskEcho MCP Server",
 @mcp.tool()
 async def chat_completion(
         messages: list[Message]
-) -> Dict[str, Any]:
+) -> dict[str, Any]:
     """
     联网问答智能体会话工具，根据用户输入问题，提供基于联网搜索的大模型总结后回复内容
     Args:
